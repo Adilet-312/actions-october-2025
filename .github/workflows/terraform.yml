@@ -44,7 +44,8 @@ jobs:
           region = "${{ inputs.region }}"
           ami_id = "${{ inputs.ami_id }}"
           instance_type = "${{ inputs.instance_type }}"
-          EOF  
+          EOF
+          cat terraform.tfvars
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v3
